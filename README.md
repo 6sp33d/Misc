@@ -1,0 +1,1 @@
+These are scripts that I've found and modified for my own purposes. They may retain much of the original author's code. I'm primarly hosting files here for my future use without the risk of someone else deleting a file that I rely on. Feel free to use and enjoy, if you find anything of value here.
