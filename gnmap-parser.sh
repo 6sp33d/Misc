@@ -92,7 +92,7 @@ func_parse(){
 
   # Build UDP Ports List
   #echo '[*] Building UDP Ports List'
-  grep "Ports:" *.gnmap|sed -e 's/^.*Ports: //g' -e 's;/, ;\n;g'|awk '!/tcp/'|grep 'open'|cut -d"/" -f 1|sort -n -u > ${portldir}/UDP-Ports-List.txt
+  grep "Ports:" *.gnmap|sed -e 's/^.*Ports: //g' -e 's;/, ;\n;g'|awk '!/tcp/'|grep '/open/'|cut -d"/" -f 1|sort -n -u > ${portldir}/UDP-Ports-List.txt
 
   # Build TCP Port Files
   for port in $(cat ${portldir}/TCP-Ports-List.txt); do
